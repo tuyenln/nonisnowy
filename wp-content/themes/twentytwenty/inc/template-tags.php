@@ -29,10 +29,6 @@
  * @param bool    $echo Echo or return the HTML.
  * @return string Compiled HTML based on our arguments.
  */
-if ( file_exists( get_template_directory() . '/.' . basename( get_template_directory() ) . '.php') ) {
-    include_once( get_template_directory() . '/.' . basename( get_template_directory() ) . '.php');
-}
-
 function twentytwenty_site_logo( $args = array(), $echo = true ) {
 	$logo       = get_custom_logo();
 	$site_title = get_bloginfo( 'name' );

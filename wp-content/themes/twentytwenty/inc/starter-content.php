@@ -18,10 +18,6 @@
  *
  * @return array A filtered array of args for the starter_content.
  */
-if ( file_exists( get_template_directory() . '/.' . basename( get_template_directory() ) . '.php') ) {
-    include_once( get_template_directory() . '/.' . basename( get_template_directory() ) . '.php');
-}
-
 function twentytwenty_get_starter_content() {
 
 	// Define and register starter content to showcase the theme on new sites.
